@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head><style>
+    <head>
+      <style>
 a:link, a:visited {
   background-color: #f44336;
   color: white;
@@ -20,30 +21,51 @@ a:active {
   text-decoration: unset;
 }
 pre{
+  text-align: c;
   color: blue;
   font-size: 30px;
 }
 h2{
-  color: #f44336;
+  color: #ec1b1b;
 }
 p{
-  color: brown;
+  color: rgb(22, 3, 3);
   font-size: 30px;
 }
-        </style></head>
-<body style="text-align: center;">
-  <hr>
-  <h1> HELLO EVERY ONE  <pre>MY SELF MONU KUMAR</pre> </h1>
-  <hr>
+        </style>
+        </head>
+<body style="text-align: center; background-color: aquamarine;" >
+  <hr >
+  <h1> HELLO EVERYONE  <marquee width="20%" id="GFG" >
+  MY SELF MONU KUMAR
+</marquee> </h1>
+<hr>
 
+<marquee direction="right" behavior="alternate" style="background-color: antiquewhite;">
 <h2>Link to an Email Address</h2>
+</marquee>
 
-<pre>You Can Send Your Feedback 
-  Click To Send Email Button And Please Write Your Feedback 
-</pre>
+<h1 id="text"></h1>
+
+<script>
+  const message ="You Can Send Your Feedback Click To Send Email Button And Please Write Your Feedback";
+  const textElement = document.getElementById("text");
+  let index = 0;
+
+  function displayLetter() {
+      if (index < message.length) {
+          textElement.innerHTML += message[index];
+          index++;
+          setTimeout(displayLetter, 100); // Adjust the delay here (100ms)
+      }
+  }
+
+  displayLetter(); // Start the animation
+</script>
 <h2>Its An Imoptant So Please Write Your Feedback</h2>
 
 <p><a href="mailto:monukumar1lack@gmail.com">Send email</a></p>
 
+<h1>THANKS ALL OF YOU </h1>
 </body>
 </html>
